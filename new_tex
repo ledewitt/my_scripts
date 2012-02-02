@@ -3,12 +3,16 @@
 # I own /usr/local/bin. That is where this file must live.
 
 puts "\\documentclass{amsart}"
-puts "\\usepackage{amssymb,latexsym}"
+puts "\\usepackage{amssymb,latexsym, ulem}"
+puts "\\usepackage[left=1in,top=1in,right=1in,bottom=1in,nohead]{geometry}"
 puts
 puts "\\pagestyle{empty}"
 puts
+puts "\\parskip 5pt"
+puts "\\parindent 0pt"
+puts
 puts "\\begin{document}"
-puts "  \\title{\\bf Homework \\#1}"
+puts "  \\title{\\bf Homework \\#X}"
 puts "  \\author{Luke DeWitt\\\\"
 puts "  MORE STUFF MAYBE}"
 puts "  \\maketitle"
