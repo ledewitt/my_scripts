@@ -2,15 +2,15 @@
 
 # I own /usr/local/bin. That is where this file must live.
 
-file = File.open("outputfile.tex","w")
-
-file.puts "\\documentclass{amsart}"
-file.puts "\\usepackage{amssymb,latexsym}"
-file.puts
-file.puts "\\pagestyle{empty}"
-file.puts
-file.puts "\\begin{document}"
-file.puts
-file.puts "\\end{document}"
-
-file.close
+puts "\\documentclass{amsart}"
+puts "\\usepackage{amssymb,latexsym}"
+puts
+puts "\\pagestyle{empty}"
+puts
+puts "\\begin{document}"
+puts "  \\title{\\bf Homework \\#1}"
+puts "  \\author{Luke DeWitt\\\\"
+puts "  MORE STUFF MAYBE}"
+puts "  \\maketitle"
+puts
+puts "\\end{document}"
