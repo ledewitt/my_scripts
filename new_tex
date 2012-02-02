@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby -wKU
+
+# I own /usr/local/bin. That is where this file must live.
+
+file = File.open("outputfile.tex","w")
+
+file.puts "\\documentclass{amsart}"
+file.puts "\\usepackage{amssymb,latexsym}"
+file.puts
+file.puts "\\pagestyle{empty}"
+file.puts
+file.puts "\\begin{document}"
+file.puts
+file.puts "\\end{document}"
+
+file.close
