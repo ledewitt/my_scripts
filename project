@@ -6,7 +6,6 @@ puts "Enter the name of your project:"
 
 project = gets.strip
 
-system "mkdir #{project}"
 system "mkdir -p #{project}/{bin,data,lib,test}"
 system "touch #{project}/README"
 system "mkdir #{project}/lib/#{project}"
