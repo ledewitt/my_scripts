@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby -wKU
+
+# I own /usr/local/bin. That is where this file must live.
+
+puts "Enter the name of your project:"
+
+project = gets.strip
+
+`mkdir #{project}`
+`mkdir #{project}/bin`
+`mkdir #{project}/data`
+`mkdir #{project}/lib`
+`mkdir #{project}/test`
+`touch #{project}/README`
+`mkdir #{project}/lib/#{project}`
+`touch #{project}/lib/#{project}.rb`
