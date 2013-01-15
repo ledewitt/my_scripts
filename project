@@ -6,7 +6,7 @@ puts "Enter the name of your project:"
 
 project = gets.strip
 
-system "mkdir -p #{project}/{bin,data,doc,lib,spec}"
+system "mkdir -p #{project}/{bin,config,data,db,doc,lib,spec,views}"
 system "touch #{project}/README"
 system "mkdir #{project}/lib/#{project}"
 system "touch #{project}/lib/#{project}.rb"
